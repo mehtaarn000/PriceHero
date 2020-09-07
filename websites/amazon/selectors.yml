@@ -1,0 +1,6 @@
+name:
+    css: '#productTitle'
+    type: Text
+price:
+    css: '#newBuyBoxPrice'
+    type: Text
