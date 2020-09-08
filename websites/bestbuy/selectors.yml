@@ -1,0 +1,4 @@
+price:
+  css: 'div.price-box div.priceView-hero-price span:nth-of-type(1)'
+  type: 'Text'
+
