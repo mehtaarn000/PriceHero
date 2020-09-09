@@ -1,0 +1,16 @@
+originalprice:
+    css: 'div.right-rail-affix-helper span.market-value'
+    xpath: null
+    type: Text
+savevalue:
+    css: 'div.right-rail-affix-helper span.total-savings'
+    xpath: null
+    type: Text
+name:
+    css: 'div.right-rail-affix-helper h3.text-bold'
+    xpath: null
+    type: Text
+price:
+    css: 'div.right-rail-affix-helper span.price'
+    xpath: null
+    type: Text
