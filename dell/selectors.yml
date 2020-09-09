@@ -1,0 +1,12 @@
+originalprice:
+    css: span.cf-price
+    xpath: null
+    type: Text
+price:
+    css: 'div.cf-dell-price div.cf-price'
+    xpath: null
+    type: Text
+name:
+    css: 'h1.cf-pg-title span'
+    xpath: null
+    type: Text
