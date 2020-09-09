@@ -1,0 +1,12 @@
+price:
+    css: 'span.price-wrapper span.price'
+    xpath: null
+    type: Text
+name:
+    css: 'div.product-info-title span.base'
+    xpath: null
+    type: Text
+discountprice:
+    css: 'span.special-price span.price'
+    xpath: null
+    type: Text
