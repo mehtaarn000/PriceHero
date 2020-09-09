@@ -1,0 +1,2 @@
+IMPORTANT:
+When using selectorlib and yml selectors, costco returns: '--' for price. In order to get around this, we have to use selenium.
