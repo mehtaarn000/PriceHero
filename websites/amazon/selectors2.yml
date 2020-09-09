@@ -1,0 +1,8 @@
+price:
+    css: 'td.a-span12 span.a-size-medium.a-color-price'
+    xpath: null
+    type: Text
+name:
+    css: span.a-size-large
+    xpath: null
+    type: Text
