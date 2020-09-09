@@ -1,9 +1,17 @@
 from selectorlib import Extractor
 from requests import get
 
-extractor = Extractor.from_yaml_file('selectors.yml')
+def dell2(dell2_url):
+    extractor2 = Extractor.from_yaml_file('selectors2.yml')
+    website2 = get(dell2_url, headers=headers)
+    productdata2 = extractor2.extract(website2.text)
+    print(productdata2)
+
+
 
 def dell(dell_url):
+    extractor = Extractor.from_yaml_file('selectors.yml')
+    global headers
     headers = {
         'authority': 'www.dell.com',
         'pragma': 'no-cache',
@@ -19,6 +27,8 @@ def dell(dell_url):
 
     website = get(dell_url, headers=headers)
     productdata = extractor.extract(website.text)
-    print(productdata)
 
-dell('https://www.dell.com/en-us/shop/dell-laptops/xps-13-laptop/spd/xps-13-7390-laptop/xn7390ehnss')
+    if productdata['name'] == None or productdata['price'] == None:
+        dell2(dell_url)
+    else:
+        print(productdata)
