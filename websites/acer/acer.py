@@ -19,6 +19,4 @@ def acer(acer_url):
 
     website = get(acer_url, headers=headers)
     productdata = extractor.extract(website.text)
-    print(productdata)
-
-acer('https://store.acer.com/en-us/swift-7-laptop-sf714-52t-75r6')
+    return productdata
