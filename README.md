@@ -1,5 +1,5 @@
 # PriceHero
-An application that will allow users to get notifications about product prices from many different websites. 
+A python module that will allow users to get product prices from many different websites. 
 
 Table of Contents:
 1 ----------- Long Description
