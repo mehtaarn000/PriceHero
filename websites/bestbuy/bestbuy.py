@@ -20,7 +20,4 @@ def bestbuy(bestbuy_url):
 
     website = get(bestbuy_url, headers=headers)
     productdata = extractor.extract(website.text)
-    print(productdata)
-
-bestbuy('https://www.bestbuy.com/site/dell-inspiron-15-7000-2-in-1-15-6-touch-screen-laptop-intel-core-i7-16gb-memory-512gb-ssd-32gb-intel-optane-silver/6409067.p?skuId=6409067')
-
+    return productdata
