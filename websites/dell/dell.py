@@ -1,17 +1,9 @@
 from selectorlib import Extractor
 from requests import get
 
-def dell2(dell2_url):
-    extractor2 = Extractor.from_yaml_file('selectors2.yml')
-    website2 = get(dell2_url, headers=headers)
-    productdata2 = extractor2.extract(website2.text)
-    print(productdata2)
-
-
-
 def dell(dell_url):
-    extractor = Extractor.from_yaml_file('selectors.yml')
-    global headers
+    extractor = Extractor.from_yaml_file('dell_selectors.yml')
+    extractor2 = Extractor.from_yaml_file('dell_selectors2.yml')
     headers = {
         'authority': 'www.dell.com',
         'pragma': 'no-cache',
@@ -29,6 +21,7 @@ def dell(dell_url):
     productdata = extractor.extract(website.text)
 
     if productdata['name'] == None or productdata['price'] == None:
-        dell2(dell_url)
+        productdata2 = extractor2.extract(website.text)
+        return productdata2
     else:
-        print(productdata)
+        return productdata
