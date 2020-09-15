@@ -4,6 +4,7 @@ from costco import costco as c
 from dell import dell as d
 from michaels import michaels as e
 from acer import acer as f
+from walmart import walmart as g
 
 def amazon(self):
     amazon_product = a(self)
@@ -28,3 +29,7 @@ def michaels(michaels_url):
 def acer(acer_url):
     acer_product = f(acer_url)
     return acer_product
+
+def walmart(walmart_url):
+    walmart_product = g(walmart_url)
+    return walmart_product
