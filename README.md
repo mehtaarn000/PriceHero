@@ -15,3 +15,4 @@ Table of Contents:
 5. BestBuy
 6. Walmart
 7. Joanns
+8. Costco
