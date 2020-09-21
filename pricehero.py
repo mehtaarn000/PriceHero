@@ -13,10 +13,6 @@ def amazon(self):
 def bestbuy(self):
     bestbuy_product = b(self)
     return bestbuy_product
-    
-def costco(self):
-    costco_product = c(self)
-    return costco_product
 
 def dell(dell_url):
     dell_product = d(dell_url)
