@@ -1,10 +1,10 @@
 # Contributing to PriceHero in 5 steps
 
 ## Step 1
-Download the selectorlib Chrome extension, which can be found [here](https://chrome.google.com/webstore/detail/selectorlib/llgknofgmghejanicfcjdibnhpofaefd?hl=en)
+Download the selectorlib Chrome extension, which can be found [here](https://chrome.google.com/webstore/detail/selectorlib/llgknofgmghejanicfcjdibnhpofaefd?hl=en).
 
 ## Step 2
-Read the documentation for selectorlib found [here](https://selectorlib.com/getting-started.html) or check out our [wiki template](https://github.com/mehtaarn000/PriceHero/wiki/Selectorlib-template)
+Read the documentation for selectorlib found [here](https://selectorlib.com/getting-started.html) or check out our [wiki template.](https://github.com/mehtaarn000/PriceHero/wiki/Selectorlib-template)
 
 ## Step 3
 Create a folder entitled with the website you are adding's name and include 3 files in it.
