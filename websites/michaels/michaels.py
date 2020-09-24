@@ -1,9 +1,8 @@
 from selectorlib import Extractor
 from requests import get
 
-extractor = Extractor.from_yaml_file('selectors.yml')
-
 def michaels(michaels_url):
+    extractor = Extractor.from_yaml_file("./websites/michaels/michaels_selectors.yml")
     headers = {
         'authority': 'www.michaels.com',
         'pragma': 'no-cache',
