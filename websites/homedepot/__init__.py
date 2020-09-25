@@ -1,0 +1,1 @@
+"""Gets the name, price, and discount of Home Depot products"""
