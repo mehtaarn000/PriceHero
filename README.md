@@ -7,7 +7,7 @@ Table of Contents:
 3 ----------- Installation
 4 ----------- Supported Websites
 
-# Supported Websites
+## Supported Websites
 1. Amazon
 2. Acer
 3. Dell
@@ -15,3 +15,4 @@ Table of Contents:
 5. BestBuy
 6. Walmart
 7. Joanns
+8. Home Depot
