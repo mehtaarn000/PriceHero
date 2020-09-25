@@ -1,10 +1,9 @@
 from requests import get
 from selectorlib import Extractor
 
-file = 'bestbuy_selectors.yml'
-extractor = Extractor.from_yaml_file(file)
 
 def bestbuy(bestbuy_url):    
+    extractor = Extractor.from_yaml_file('bestbuy_selectors.yml')
     headers = {
         'authority': 'www.amazon.com',
         'pragma': 'no-cache',

@@ -1,10 +1,9 @@
-from amazon import amazon as a
-from bestbuy import bestbuy as b
-from costco import costco as c
-from dell import dell as d
-from michaels import michaels as e
-from acer import acer as f
-from walmart import walmart as g
+from websites.amazon import amazon as a
+from websites.bestbuy import bestbuy as b
+from websites.dell import dell as d
+from websites.michaels import michaels as e
+from websites.acer import acer as f
+from websites.walmart import walmart as g
 
 def amazon(self):
     amazon_product = a(self)

@@ -1,9 +1,9 @@
 from selectorlib import Extractor
 from requests import get
 
-extractor = Extractor.from_yaml_file('selectors.yml')
 
 def acer(acer_url):
+    extractor = Extractor.from_yaml_file('selectors.yml')
     headers = {
         'authority': 'www.acer.com',
         'pragma': 'no-cache',
