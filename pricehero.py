@@ -32,3 +32,4 @@ def walmart(walmart_url):
 
 def adafruit(adafruit_url):
     adafruit_product = h.adafruit(adafruit_url)
+    return adafruit_product
