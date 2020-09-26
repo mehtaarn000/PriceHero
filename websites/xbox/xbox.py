@@ -19,6 +19,3 @@ def xbox(xbox_url):
     website = get(xbox_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata
-
-a = xbox('https://www.microsoft.com/en-us/p/shotgun-farmers/9MX1ZZ46W88X?activetab=pivot:overviewtab')
-print(a)
