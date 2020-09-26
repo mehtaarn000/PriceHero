@@ -16,3 +16,4 @@ Table of Contents:
 6. Walmart
 7. Joanns
 8. Home Depot
+9. Adafruit
