@@ -5,6 +5,7 @@ from websites.michaels import michaels as e
 from websites.acer import acer as f
 from websites.walmart import walmart as g
 from websites.adafruit import adafruit as h
+from websites.xbox import xbox as i
 
 def amazon(self):
     amazon_product = a.amazon(self)
@@ -33,3 +34,7 @@ def walmart(walmart_url):
 def adafruit(adafruit_url):
     adafruit_product = h.adafruit(adafruit_url)
     return adafruit_product
+
+def xbox(xbox_url):
+    xbox_product = i.xbox(xbox_url)
+    return xbox_product
