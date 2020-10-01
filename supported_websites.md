@@ -1,3 +1,4 @@
+# List of Supported PriceHero websites
 1. https://amazon.com
 2. https://bestbuy.com
 3. https://https://store.acer.com/en-us/
