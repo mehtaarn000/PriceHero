@@ -18,6 +18,4 @@ def michaels(michaels_url):
 
     website = get(michaels_url, headers=headers)
     productdata = extractor.extract(website.text)
-    print(productdata)
-
-michaels('https://www.michaels.com/magnetic-photo-frames-by-studio-decor/M20000540.html?dwvar_M20000540_size=4%22%20x%204%22')
+    return productdata
