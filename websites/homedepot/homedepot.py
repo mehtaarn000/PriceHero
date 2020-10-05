@@ -20,6 +20,3 @@ def home_depot(home_depot_url):
     website = get(home_depot_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata
-
-a = home_depot('https://www.homedepot.com/p/Ring-1080P-Wired-and-Wireless-Video-Door-Bell-3-Plus-with-Floodlight-Cam-Black-8VREYZ-BEN0/314719227')
-print(a)
