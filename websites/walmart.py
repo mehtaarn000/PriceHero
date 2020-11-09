@@ -2,7 +2,20 @@ from selectorlib import Extractor
 from requests import get
 
 def walmart(walmart_url):
-    extractor = Extractor.from_yaml_file('walmart_selectors.yml')
+    extractor = Extractor.from_yaml_string("""
+    dollars:
+        css: 'span.hide-content span.price-characteristic'
+        xpath: null
+        type: Text
+    cents:
+        css: 'span.hide-content span.price-mantissa'
+        xpath: null
+        type: Text
+    name:
+        css: h1.prod-ProductTitle
+        xpath: null
+        type: Text
+    """)
     headers = {
         'authority': 'www.walmart.com',
         'pragma': 'no-cache',

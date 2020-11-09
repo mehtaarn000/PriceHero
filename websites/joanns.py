@@ -1,11 +1,19 @@
 from selectorlib import Extractor
 from requests import get
 
-def dell(dell_url):
-    extractor = Extractor.from_yaml_file('dell_selectors.yml')
-    extractor2 = Extractor.from_yaml_file('dell_selectors2.yml')
+def joanns(joann_url):
+    extractor = Extractor.from_yaml_string("""
+    name:
+        css: 'div.pdp-main__section h1.pdp__name'
+        xpath: null
+        type: Text
+    price:
+        css: 'div.pdp-main__section span.price__item.sales span.value'
+        xpath: null
+        type: Text
+""")
     headers = {
-        'authority': 'www.dell.com',
+        'authority': 'www.joann.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',
@@ -17,11 +25,6 @@ def dell(dell_url):
         'sec-fetch-dest': 'document',
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
 
-    website = get(dell_url, headers=headers)
+    website = get(joann_url, headers=headers)
     productdata = extractor.extract(website.text)
-
-    if productdata['name'] == None or productdata['price'] == None:
-        productdata2 = extractor2.extract(website.text)
-        return productdata2
-    else:
-        return productdata
+    return productdata

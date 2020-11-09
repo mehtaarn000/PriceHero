@@ -1,11 +1,19 @@
-from requests import get
 from selectorlib import Extractor
+from requests import get
 
-
-def bestbuy(bestbuy_url):    
-    extractor = Extractor.from_yaml_file('bestbuy_selectors.yml')
+def michaels(michaels_url):
+    extractor = Extractor.from_yaml_string("""
+    price:
+        css: 'div.header-right div.product-sales-price'
+        xpath: null
+        type: Text
+    name:
+        css: 'div.header-left h1.product-name'
+        xpath: null
+        type: Text
+    """)
     headers = {
-        'authority': 'www.amazon.com',
+        'authority': 'www.michaels.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',
@@ -17,6 +25,6 @@ def bestbuy(bestbuy_url):
         'sec-fetch-dest': 'document',
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
 
-    website = get(bestbuy_url, headers=headers)
+    website = get(michaels_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata

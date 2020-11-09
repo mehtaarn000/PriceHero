@@ -1,10 +1,28 @@
-from selectorlib import Extractor
 from requests import get
+from selectorlib import Extractor
 
-def michaels(michaels_url):
-    extractor = Extractor.from_yaml_file("./websites/michaels/michaels_selectors.yml")
+
+def bestbuy(bestbuy_url):    
+    extractor = Extractor.from_yaml_string("""
+    name:
+        css: h1.heading-5
+        xpath: null
+        type: Text
+    price:
+        css: 'div.price-box div.priceView-hero-price span:nth-of-type(1)'
+        xpath: null
+        type: Text
+    originalprice:
+        css: 'div.pricing-price__regular-price:nth-of-type(1)'
+        xpath: null
+        type: Text
+    savevalue:
+        css: div.pricing-price__savings
+        xpath: null
+        type: Text
+    """)
     headers = {
-        'authority': 'www.michaels.com',
+        'authority': 'www.amazon.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',
@@ -16,8 +34,6 @@ def michaels(michaels_url):
         'sec-fetch-dest': 'document',
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
 
-    website = get(michaels_url, headers=headers)
+    website = get(bestbuy_url, headers=headers)
     productdata = extractor.extract(website.text)
-    print(productdata)
-
-michaels('https://www.michaels.com/magnetic-photo-frames-by-studio-decor/M20000540.html?dwvar_M20000540_size=4%22%20x%204%22')
+    return productdata
