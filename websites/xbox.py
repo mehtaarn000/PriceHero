@@ -1,10 +1,19 @@
 from selectorlib import Extractor
 from requests import get
 
-def adafruit(adafruit_url):
-    extractor = Extractor.from_yaml_file('adafruit_selectors.yml')
+def xbox(xbox_url):
+    extractor = Extractor.from_yaml_string("""
+    name:
+        css: 'div.pi-content h1'
+        xpath: null
+        type: Text
+    price:
+        css: 'div.pi-product-purchase span'
+        xpath: null
+        type: Text
+    """)
     headers = {
-        'authority': 'www.adafruit.com',
+        'authority': 'www.xbox.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',
@@ -16,6 +25,6 @@ def adafruit(adafruit_url):
         'sec-fetch-dest': 'document',
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
 
-    website = get(adafruit_url, headers=headers)
+    website = get(xbox_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata

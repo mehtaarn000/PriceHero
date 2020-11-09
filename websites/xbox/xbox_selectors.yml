@@ -1,8 +1,0 @@
-name:
-    css: 'div.pi-content h1'
-    xpath: null
-    type: Text
-price:
-    css: 'div.pi-product-purchase span'
-    xpath: null
-    type: Text

@@ -1,8 +1,0 @@
-name:
-    css: h1.products_name
-    xpath: null
-    type: Text
-price:
-    css: 'div#prod-price span'
-    xpath: null
-    type: Text

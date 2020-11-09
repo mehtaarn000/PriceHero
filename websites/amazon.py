@@ -2,8 +2,24 @@ from selectorlib import Extractor
 from requests import get 
 
 def amazon(amazon_url):
-    extractor = Extractor.from_yaml_file('selectors.yml')
-    extractor2 = Extractor.from_yaml_file('selectors2.yml')    
+    extractor2 = Extractor.from_yaml_string("""
+    price:
+        css: 'td.a-span12 span.a-size-medium.a-color-price'
+        xpath: null
+        type: Text
+    name:
+        css: span.a-size-large
+        xpath: null
+        type: Text
+    """)
+    extractor = Extractor.from_yaml_string("""
+    name:
+        css: '#productTitle'
+        type: Text
+    price:
+        css: '#newBuyBoxPrice'
+        type: Text
+    """)   
     headers = {
         'authority': 'www.amazon.com',
         'pragma': 'no-cache',

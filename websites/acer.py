@@ -1,9 +1,21 @@
 from selectorlib import Extractor
 from requests import get
 
-
 def acer(acer_url):
-    extractor = Extractor.from_yaml_file('selectors.yml')
+    extractor = Extractor.from_yaml_string("""
+    price:
+        css: 'span.price-wrapper span.price'
+        xpath: null
+        type: Text
+    name:
+        css: 'div.product-info-title span.base'
+        xpath: null
+        type: Text
+    discountprice:
+        css: 'span.special-price span.price'
+        xpath: null
+        type: Text
+    """)
     headers = {
         'authority': 'www.acer.com',
         'pragma': 'no-cache',
