@@ -1,5 +1,5 @@
 # PriceHero
-A python module that will allow users to get product prices from many different websites. 
+A python module that will allow users to get product prices information from a multitude of different websites. 
 
 Table of Contents:  
 1 ----------- Long Description  
