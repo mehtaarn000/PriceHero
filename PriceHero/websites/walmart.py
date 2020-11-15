@@ -40,5 +40,3 @@ def walmart(walmart_url):
     website = get(walmart_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata
-a = walmart('https://www.walmart.com/ip/Only-At-Walmart-Marvel-Spider-Man-Maximum-Venom-12-Inch-Figure/215210239?athcpid=215210239&athpgid=athenaHomepage&athcgid=dealspage-home-61381&athznid=ItemCarouselType_BestInDeals&athieid=v1&athstid=CS020&athguid=466001f5-9a18a716-aacbfa239f15260d&athancid=null&athena=true')
-print(a)

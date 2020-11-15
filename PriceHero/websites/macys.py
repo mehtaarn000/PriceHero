@@ -33,5 +33,3 @@ def macys(macys_url):
     website = get(macys_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata
-
-print(macys("https://www.macys.com/shop/product/bella-4-slice-stainless-steel-toaster-oven?ID=10003210&CategoryID=24294"))

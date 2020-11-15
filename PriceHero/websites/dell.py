@@ -55,5 +55,3 @@ def dell(dell_url):
         return productdata2
     else:
         return productdata
-e = dell('https://www.dell.com/en-us/shop/dell-laptops/xps-13-laptop/spd/xps-13-7390-laptop/mktxn7390ehscs?gacd=9694607-1004-5761040-266790354-0&dgc=st&ds_rl=1285903&gclid=Cj0KCQiAy579BRCPARIsAB6QoIY8mmo0WDK1xCARP8E7sfYRrNI3Oo-qfWIg2MefwhWgzFeQPY80UXwaAvRbEALw_wcB&gclsrc=aw.ds')
-print(e)

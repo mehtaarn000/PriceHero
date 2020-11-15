@@ -1,14 +1,14 @@
-from .websites.amazon import amazon as a
-from .websites.bestbuy import bestbuy as b
-from .websites.dell import dell as d
-from .websites.michaels import michaels as e
-from .websites.acer import acer as f
-from .websites.walmart import walmart as g
-from .websites.adafruit import adafruit as h
-from .websites.xbox import xbox as i
-from .websites.joanns import joanns as j
-from .websites.github_shop import github_shop as k
-from .websites.macys import macys as l
+from websites.amazon import amazon as a
+from websites.bestbuy import bestbuy as b
+from websites.dell import dell as d
+from websites.michaels import michaels as e
+from websites.acer import acer as f
+from websites.walmart import walmart as g
+from websites.adafruit import adafruit as h
+from websites.xbox import xbox as i
+from websites.joanns import joanns as j
+from websites.github_shop import github_shop as k
+from websites.macys import macys as l
 
 def amazon(self):
     amazon_product = a(self)

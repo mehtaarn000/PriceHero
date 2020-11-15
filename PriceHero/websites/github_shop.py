@@ -16,4 +16,3 @@ def github_shop(github_shop_url):
     website = get(github_shop_url)
     productdata = extractor.extract(website.text)
     return productdata
-print(github_shop('https://github.myshopify.com/collections/shirts/products/arctocat'))
