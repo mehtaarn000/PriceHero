@@ -7,3 +7,6 @@ Costco returns '--' as price.
 ## Lowes
 Lowes returns 'None' as price.
 (https://www.lowes.com)
+
+## Home Depot
+Home Depot returns '--' as price.

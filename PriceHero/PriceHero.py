@@ -1,11 +1,12 @@
-from websites.amazon import amazon as a
-from websites.bestbuy import bestbuy as b
-from websites.dell import dell as d
-from websites.michaels import michaels as e
-from websites.acer import acer as f
-from websites.walmart import walmart as g
-from websites.adafruit import adafruit as h
-from websites.xbox import xbox as i
+from .websites.amazon import amazon as a
+from .websites.bestbuy import bestbuy as b
+from .websites.dell import dell as d
+from .websites.michaels import michaels as e
+from .websites.acer import acer as f
+from .websites.walmart import walmart as g
+from .websites.adafruit import adafruit as h
+from .websites.xbox import xbox as i
+from .websites.joanns import joanns as j
 
 def amazon(self):
     amazon_product = a(self)
@@ -38,3 +39,7 @@ def adafruit(adafruit_url):
 def xbox(xbox_url):
     xbox_product = i(xbox_url)
     return xbox_product
+
+def joanns(joanns_url):
+    joanns_product = j(joanns_url)
+    return joanns_product
