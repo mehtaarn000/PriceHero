@@ -3,21 +3,29 @@ from requests import get
 
 def walmart(walmart_url):
     extractor = Extractor.from_yaml_string("""
-    dollars:
-        css: 'span.hide-content span.price-characteristic'
-        xpath: null
-        type: Text
-    cents:
-        css: 'span.hide-content span.price-mantissa'
-        xpath: null
-        type: Text
     name:
         css: h1.prod-ProductTitle
         xpath: null
         type: Text
+    dollars:
+        css: 'section.prod-PriceSection span.hide-content span.price-characteristic'
+        xpath: null
+        type: Text
+    cents:
+        css: 'section.prod-PriceSection span.hide-content span.price-mantissa'
+        xpath: null
+        type: Text
+    originaldollars:
+        css: 'section.prod-PriceSection div.price-old span.price-characteristic'
+        xpath: null
+        type: Text
+    originalcents:
+        css: 'section.prod-PriceSection div.price-old span.price-mantissa'
+        xpath: null
+        type: Text
     """)
     headers = {
-        'authority': 'www.walmart.com',
+        'authority': 'www.michaels.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',
@@ -32,3 +40,5 @@ def walmart(walmart_url):
     website = get(walmart_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata
+a = walmart('https://www.walmart.com/ip/Only-At-Walmart-Marvel-Spider-Man-Maximum-Venom-12-Inch-Figure/215210239?athcpid=215210239&athpgid=athenaHomepage&athcgid=dealspage-home-61381&athznid=ItemCarouselType_BestInDeals&athieid=v1&athstid=CS020&athguid=466001f5-9a18a716-aacbfa239f15260d&athancid=null&athena=true')
+print(a)
