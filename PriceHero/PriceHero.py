@@ -8,6 +8,7 @@ from .websites.adafruit import adafruit as h
 from .websites.xbox import xbox as i
 from .websites.joanns import joanns as j
 from .websites.github_shop import github_shop as k
+from .websites.macys import macys as l
 
 def amazon(self):
     amazon_product = a(self)
@@ -48,3 +49,7 @@ def joanns(joanns_url):
 def github_shop(github_shop_url):
     github_shop_product = k(github_shop_url)
     return github_shop_product
+
+def macys(macys_url):
+    macys_product = l(macys_url)
+    return macys_product
