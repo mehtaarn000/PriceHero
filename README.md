@@ -1,6 +1,9 @@
 # PriceHero
 A python module that will allow users to get product prices information from a multitude of different websites. 
 
+# NOTE
+Package broken right now. Will remove this message when usable.
+
 ## Installation
 `pip install PriceHero-mehtaarn000`
 
