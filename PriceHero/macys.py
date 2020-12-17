@@ -2,7 +2,7 @@ from requests import get
 from selectorlib import Extractor
 
 
-def macys(macys_url):    
+def _macys(macys_url):    
     extractor = Extractor.from_yaml_string("""
     name:
         css: 'div.cell div.cell div.cell h1.p-name'

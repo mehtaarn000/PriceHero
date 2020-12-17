@@ -1,7 +1,7 @@
 from selectorlib import Extractor
 from requests import get
 
-def xbox(xbox_url):
+def _xbox(xbox_url):
     extractor = Extractor.from_yaml_string("""
     name:
         css: 'div.pi-content h1'

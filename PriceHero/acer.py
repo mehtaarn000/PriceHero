@@ -1,7 +1,7 @@
 from selectorlib import Extractor
 from requests import get
 
-def acer(acer_url):
+def _acer(acer_url):
     extractor = Extractor.from_yaml_string("""
     price:
         css: 'span.price-wrapper span.price'

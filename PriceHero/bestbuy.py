@@ -2,7 +2,7 @@ from requests import get
 from selectorlib import Extractor
 
 
-def bestbuy(bestbuy_url):    
+def _bestbuy(bestbuy_url):    
     extractor = Extractor.from_yaml_string("""
     name:
         css: h1.heading-5

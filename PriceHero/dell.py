@@ -1,7 +1,7 @@
 from selectorlib import Extractor
 from requests import get
 
-def dell(dell_url):
+def _dell(dell_url):
     extractor = Extractor.from_yaml_string("""
     originalprice:
         css: span.cf-price

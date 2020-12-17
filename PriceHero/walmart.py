@@ -1,7 +1,7 @@
 from selectorlib import Extractor
 from requests import get
 
-def walmart(walmart_url):
+def _walmart(walmart_url):
     extractor = Extractor.from_yaml_string("""
     name:
         css: h1.prod-ProductTitle

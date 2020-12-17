@@ -1,7 +1,7 @@
 from selectorlib import Extractor
 from requests import get
 
-def michaels(michaels_url):
+def _michaels(michaels_url):
     extractor = Extractor.from_yaml_string("""
     price:
         css: 'div.header-right div.product-sales-price'

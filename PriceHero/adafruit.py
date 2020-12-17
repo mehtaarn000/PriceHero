@@ -1,7 +1,7 @@
 from selectorlib import Extractor
 from requests import get
 
-def adafruit(adafruit_url):
+def _adafruit(adafruit_url):
     extractor = Extractor.from_yaml_string("""
     name:
         css: h1.products_name

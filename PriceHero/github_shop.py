@@ -1,7 +1,7 @@
 from selectorlib import Extractor
 from requests import get
 
-def github_shop(github_shop_url):
+def _github_shop(github_shop_url):
     extractor = Extractor.from_yaml_string("""
     name:
         css: h1.product__header__title

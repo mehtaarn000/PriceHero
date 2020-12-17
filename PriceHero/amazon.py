@@ -1,7 +1,7 @@
 from selectorlib import Extractor
 from requests import get 
 
-def amazon(amazon_url):
+def _amazon(amazon_url):
     extractor2 = Extractor.from_yaml_string("""
     price:
         css: 'td.a-span12 span.a-size-medium.a-color-price'
