@@ -1,7 +1,6 @@
 from requests import get
 from selectorlib import Extractor
 
-
 def _macys(macys_url):    
     extractor = Extractor.from_yaml_string("""
     name:

@@ -1,14 +1,14 @@
-from selectorlib import Extractor
 from requests import get
+from selectorlib import Extractor
 
 def _acer(acer_url):
     extractor = Extractor.from_yaml_string("""
-    price:
-        css: 'span.price-wrapper span.price'
-        xpath: null
-        type: Text
     name:
         css: 'div.product-info-title span.base'
+        xpath: null
+        type: Text
+    price:
+        css: 'span.price-wrapper span.price'
         xpath: null
         type: Text
     discountprice:

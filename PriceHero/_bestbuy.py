@@ -1,7 +1,6 @@
 from requests import get
 from selectorlib import Extractor
 
-
 def _bestbuy(bestbuy_url):    
     extractor = Extractor.from_yaml_string("""
     name:
@@ -14,10 +13,6 @@ def _bestbuy(bestbuy_url):
         type: Text
     originalprice:
         css: 'div.pricing-price__regular-price:nth-of-type(1)'
-        xpath: null
-        type: Text
-    savevalue:
-        css: div.pricing-price__savings
         xpath: null
         type: Text
     """)
