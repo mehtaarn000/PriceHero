@@ -4,7 +4,7 @@ A python module that will allow users to get product prices information from a m
 ## Installation
 `pip install PriceHero-mehtaarn000`
 
-## Usage
+## Example
 Import the module with:
 
 `import PriceHero as ph`
