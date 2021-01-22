@@ -9,6 +9,7 @@ from . import _xbox
 from . import _joanns
 from . import _github_shop
 from . import _macys
+from . import _chess_shop
 
 def amazon(self):
     amazon_product = _amazon._amazon(self)
@@ -53,3 +54,7 @@ def github_shop(github_shop_url):
 def macys(macys_url):
     macys_product = _macys._macys(macys_url)
     return macys_product
+
+def chess_shop(chess_shop_url):
+    chess_shop_product = _chess_shop._chess_shop(chess_shop_url)
+    return chess_shop_product
