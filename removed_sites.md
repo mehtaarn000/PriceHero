@@ -10,3 +10,4 @@ Lowes returns 'None' as price.
 
 ## Home Depot
 Home Depot returns '--' as price.
+(https://homedepot.com)
