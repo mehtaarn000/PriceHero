@@ -28,3 +28,4 @@ def _chess_shop(chess_shop_url):
 
     website = get(chess_shop_url, headers=headers)
     productdata = extractor.extract(website.text)
+    return productdata
