@@ -1,5 +1,5 @@
-from selectorlib import Extractor
 from requests import get
+from selectorlib import Extractor
 
 def _adafruit(adafruit_url):
     extractor = Extractor.from_yaml_string("""
@@ -12,9 +12,8 @@ def _adafruit(adafruit_url):
         xpath: null
         type: Text
     """)
-
     headers = {
-        'authority': 'www.acer.com',
+        'authority': 'www.adafruit.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',
@@ -25,7 +24,6 @@ def _adafruit(adafruit_url):
         'sec-fetch-mode': 'navigate',
         'sec-fetch-dest': 'document',
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
-        
-    website = get(adafruit_url)
+    website = get(adafruit_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata

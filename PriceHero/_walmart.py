@@ -1,5 +1,5 @@
-from selectorlib import Extractor
 from requests import get
+from selectorlib import Extractor
 
 def _walmart(walmart_url):
     extractor = Extractor.from_yaml_string("""
@@ -38,5 +38,13 @@ def _walmart(walmart_url):
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
 
     website = get(walmart_url, headers=headers)
-    productdata = extractor.extract(website.text)
-    return productdata
+    originalproductdata = extractor.extract(website.text)
+    price = str(originalproductdata["dollars"]) + "." + str(originalproductdata["cents"])
+
+    if originalproductdata["originaldollars"] == None and originalproductdata["originalcents"] == None:
+        productdata = {"name": originalproductdata["name"], "price": price, "originalprice": None}
+        return productdata
+    else:
+        originalprice = str(originalproductdata["originaldollars"]) + str(originalproductdata["originalcents"])
+        productdata = {"name": originalproductdata["name"], "price": price, "originalprice": originalprice}
+        return productdata

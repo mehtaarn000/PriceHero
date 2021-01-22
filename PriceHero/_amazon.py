@@ -1,14 +1,14 @@
+from requests import get
 from selectorlib import Extractor
-from requests import get 
 
 def _amazon(amazon_url):
     extractor2 = Extractor.from_yaml_string("""
-    price:
-        css: 'td.a-span12 span.a-size-medium.a-color-price'
-        xpath: null
-        type: Text
     name:
         css: span.a-size-large
+        xpath: null
+        type: Text
+    price:
+        css: 'td.a-span12 span.a-size-medium.a-color-price'
         xpath: null
         type: Text
     """)

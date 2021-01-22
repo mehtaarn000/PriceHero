@@ -1,5 +1,5 @@
-from selectorlib import Extractor
 from requests import get
+from selectorlib import Extractor
 
 def _dell(dell_url):
     extractor = Extractor.from_yaml_string("""
