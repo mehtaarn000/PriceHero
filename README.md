@@ -30,3 +30,4 @@ After you `print(laptop)`, your output should be something like this:
 10. Xbox
 11. Github Shop
 12. Macys
+13. Chess.com Shop
