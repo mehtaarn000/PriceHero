@@ -1,3 +1,6 @@
+__version__ = "0.3.3"
+__author__ = "mehtaarn000"
+
 from . import _amazon
 from . import _bestbuy
 from . import _dell
