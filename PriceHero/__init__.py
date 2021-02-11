@@ -10,6 +10,7 @@ from . import _joanns
 from . import _github_shop
 from . import _macys
 from . import _chess_shop
+from . import _newegg
 
 def amazon(amazon_url : str) -> dict:
     amazon_product = _amazon._amazon(amazon_url)
@@ -58,3 +59,7 @@ def macys(macys_url : str) -> dict:
 def chess_shop(chess_shop_url : str) -> dict:
     chess_shop_product = _chess_shop._chess_shop(chess_shop_url)
     return chess_shop_product
+
+def newegg(newegg_url : str) -> dict:
+    newegg_product = _newegg._newegg(newegg_url)
+    return newegg_product

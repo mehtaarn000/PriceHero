@@ -1,7 +1,7 @@
 # List of Supported PriceHero websites
 1. https://amazon.com
 2. https://bestbuy.com
-3. https://store.acer.com/en-us/
+3. https://store.acer.com/en-us
 4. https://www.dell.com/en-us/shop
 5. https://www.costco.com
 6. https://www.michaels.com
@@ -9,6 +9,7 @@
 8. https://www.joanns.com
 9. https://www.xbox.com
 10. https://www.adafruit.com
-11. https://github.myshopify.com/
+11. https://github.myshopify.com
 12. https://macys.com
-13. https://shop.chess.com/
+13. https://shop.chess.com
+14. https://newegg.com
