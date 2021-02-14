@@ -13,7 +13,7 @@ def _newegg(newegg_url):
         type: Text
     """)
     headers = {
-        'authority': 'www.adafruit.com',
+        'authority': 'www.newegg.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',

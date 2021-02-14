@@ -17,7 +17,7 @@ def _bestbuy(bestbuy_url):
         type: Text
     """)
     headers = {
-        'authority': 'www.amazon.com',
+        'authority': 'www.bestbuy.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',

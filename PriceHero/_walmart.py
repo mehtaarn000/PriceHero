@@ -25,7 +25,7 @@ def _walmart(walmart_url):
         type: Text
     """)
     headers = {
-        'authority': 'www.michaels.com',
+        'authority': 'www.walmart.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',

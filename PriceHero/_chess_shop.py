@@ -14,7 +14,7 @@ def _chess_shop(chess_shop_url):
     """)
 
     headers = {
-        'authority': 'www.dell.com',
+        'authority': 'www.shop.chess.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',

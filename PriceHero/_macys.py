@@ -17,7 +17,7 @@ def _macys(macys_url):
         type: Text
     """)
     headers = {
-        'authority': 'www.amazon.com',
+        'authority': 'www.macys.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',

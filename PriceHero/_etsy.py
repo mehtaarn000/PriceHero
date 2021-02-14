@@ -1,19 +1,19 @@
 from requests import get
 from selectorlib import Extractor
 
-def _github_shop(github_shop_url):
+def _etsy(etsy_url):
     extractor = Extractor.from_yaml_string("""
     name:
-        css: h1.product__header__title
+        css: h1.wt-text-body-03
         xpath: null
         type: Text
     price:
-        css: 'div.product__header__price span'
+        css: p.wt-text-title-03
         xpath: null
         type: Text
     """)
     headers = {
-        'authority': 'www.github.myshopify.com.com',
+        'authority': 'www.etsy.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',
@@ -24,8 +24,7 @@ def _github_shop(github_shop_url):
         'sec-fetch-mode': 'navigate',
         'sec-fetch-dest': 'document',
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
-
-    website = get(github_shop_url, headers=headers)
+    website = get(etsy_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata
-
+print(_etsy("https://www.etsy.com/listing/245707351/lucite-robe-hook-polished-brass-satin?ref=hp_disco-1"))
