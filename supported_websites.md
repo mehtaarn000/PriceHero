@@ -13,3 +13,4 @@
 12. https://macys.com
 13. https://shop.chess.com
 14. https://newegg.com
+15. https://etsy.com

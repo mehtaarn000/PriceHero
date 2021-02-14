@@ -1,4 +1,4 @@
-__version__ = "0.3.3"
+__version__ = "0.3.4"
 __author__ = "mehtaarn000"
 
 from . import _amazon
@@ -14,6 +14,7 @@ from . import _github_shop
 from . import _macys
 from . import _chess_shop
 from . import _newegg
+from . import _etsy
 
 def amazon(amazon_url : str) -> dict:
     amazon_product = _amazon._amazon(amazon_url)
@@ -66,3 +67,7 @@ def chess_shop(chess_shop_url : str) -> dict:
 def newegg(newegg_url : str) -> dict:
     newegg_product = _newegg._newegg(newegg_url)
     return newegg_product
+
+def etsy(etsy_url : str) -> dict:
+    etsy_product = _etsy._etsy(etsy_url)
+    return etsy_product
