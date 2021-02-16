@@ -27,4 +27,3 @@ def _etsy(etsy_url):
     website = get(etsy_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata
-print(_etsy("https://www.etsy.com/listing/245707351/lucite-robe-hook-polished-brass-satin?ref=hp_disco-1"))
