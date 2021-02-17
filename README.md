@@ -13,7 +13,7 @@ Now, scrape a product off acer with:
 
 `laptop = ph.acer("https://store.acer.com/en-us/aspire-5-laptop-a515-56-55j8")`
 
-After you `print(laptop)`, your output should be something like this:
+`print(laptop)`, your output should be something like this:
 
 `{'price': '$649.99', 'name': 'Aspire 5 Laptop - A515-56-55J8', 'discountprice': None}`
 
