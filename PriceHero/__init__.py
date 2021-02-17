@@ -16,6 +16,7 @@ from . import _chess_shop
 from . import _newegg
 from . import _etsy
 from . import _overstock
+from . import _pishop
 
 def amazon(amazon_url : str) -> dict:
     amazon_product = _amazon._amazon(amazon_url)
@@ -76,3 +77,7 @@ def etsy(etsy_url : str) -> dict:
 def overstock(overstock_url : str) -> dict:
     overstock_product = _overstock._overstock(overstock_url)
     return overstock_product
+
+def pishop(pishop_url : str) -> dict:
+    pishop_product = _pishop._pishop(pishop_url)
+    return pishop_product
