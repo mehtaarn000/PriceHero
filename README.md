@@ -18,6 +18,7 @@ After you `print(laptop)`, your output should be something like this:
 `{'price': '$649.99', 'name': 'Aspire 5 Laptop - A515-56-55J8', 'discountprice': None}`
 
 ## Supported Websites
+Total of 17!
 - Amazon
 - Acer
 - Dell
