@@ -23,7 +23,8 @@ from . import (
     _newegg,
     _etsy,
     _overstock,
-    _pishop
+    _pishop,
+    _boohoo
 )
 
 def amazon(amazon_url : str) -> dict:
@@ -169,3 +170,12 @@ def pishop(pishop_url : str) -> dict:
     """
     pishop_product = _pishop._pishop(pishop_url)
     return pishop_product
+
+def boohoo(boohoo_url : str) -> dict:
+    """Scrape product information from us.boohoo.com
+    
+    Keyword arguments:
+    boohoo_url -- a product url from us.boohoo.com
+    """
+    boohoo_product = _boohoo._boohoo(boohoo_url)
+    return boohoo_product
