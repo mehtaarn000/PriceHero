@@ -7,23 +7,24 @@ __maintainer__ = "mehtaarn000"
 __credits__ = ["mehtaarn000", "kilianalias", "nethracookie"]
 
 """A python module that will allow users to get product prices information from a multitude of different websites."""
-
-from . import _amazon
-from . import _bestbuy
-from . import _dell
-from . import _michaels
-from . import _acer
-from . import _walmart
-from . import _adafruit
-from . import _xbox
-from . import _joanns
-from . import _github_shop
-from . import _macys
-from . import _chess_shop
-from . import _newegg
-from . import _etsy
-from . import _overstock
-from . import _pishop
+from . import (
+    _amazon,
+    _bestbuy,
+    _dell,
+    _michaels,
+    _acer,
+    _walmart,
+    _adafruit,
+    _xbox,
+    _joanns,
+    _github_shop,
+    _macys,
+    _chess_shop,
+    _newegg,
+    _etsy,
+    _overstock,
+    _pishop
+)
 
 def amazon(amazon_url : str) -> dict:
     """Scrape product information from amazon.com
