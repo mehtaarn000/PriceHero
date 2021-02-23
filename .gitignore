@@ -1,6 +1,5 @@
 .DS_Store
 __pycache__/
-setup.py
 dist/
 build/
 PriceHero_mehtaarn000.egg-info
