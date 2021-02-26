@@ -25,7 +25,8 @@ from . import (
     _overstock,
     _pishop,
     _boohoo,
-    _walgreens
+    _walgreens,
+    _forever21
 )
 
 def amazon(amazon_url : str) -> dict:
@@ -189,3 +190,12 @@ def walgreens(walgreens_url : str) -> dict:
     """
     walgreens_product = _walgreens._walgreens(walgreens_url)
     return walgreens_product
+
+def forever21(forever21_url : str) -> dict:
+    """Scrape product information from walgreens
+    
+    Keyword arguments:
+    walgreens_url -- a product url from walgreens.com
+    """
+    forever21_product = _forever21._forever21(forever21_url)
+    return forever21_product
