@@ -27,5 +27,3 @@ def _forever21(forever21_url):
     website = get(forever21_url, headers=headers)
     productdata = extractor.extract(website.text)
     return productdata
-
-print(_forever21("https://www.forever21.com/us/2000429710032.html"))
