@@ -26,12 +26,13 @@ from . import (
     _pishop,
     _boohoo,
     _walgreens,
-    _forever21
+    _forever21,
+    _whbm
 )
 
 def amazon(amazon_url : str) -> dict:
     """Scrape product information from amazon.com
-    
+
     Keyword arguments:
     amazon_url -- a product url from amazon.com
     """
@@ -192,10 +193,19 @@ def walgreens(walgreens_url : str) -> dict:
     return walgreens_product
 
 def forever21(forever21_url : str) -> dict:
-    """Scrape product information from walgreens
+    """Scrape product information from forever21
     
     Keyword arguments:
-    walgreens_url -- a product url from walgreens.com
+    forever21_url -- a product url from forever21.com
     """
     forever21_product = _forever21._forever21(forever21_url)
     return forever21_product
+
+def whbm(whbm_url):
+    """Scrape product information from White House Black Market
+    
+    Keyword arguments:
+    whbm_url -- a product url from whitehouseblackmarket.com
+    """
+    whbm_product = _whbm._whbm(whbm_url)
+    return whbm_product
