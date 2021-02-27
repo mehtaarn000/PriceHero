@@ -18,3 +18,4 @@
 17. https://us.boohoo.com
 18. https://walgreens.com
 19. https://forever21.com
+20. https://whitehouseblackmarket.com
