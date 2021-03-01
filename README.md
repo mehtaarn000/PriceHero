@@ -1,5 +1,6 @@
 # PriceHero
 A python module that will allow users to get product prices information from a multitude of different websites. 
+[pypi link](https://pypi.org/project/PriceHero-mehtaarn000/)
 
 ## Installation
 `pip install PriceHero-mehtaarn000`
@@ -18,6 +19,7 @@ Now, scrape a product off acer with:
 `{'price': '$649.99', 'name': 'Aspire 5 Laptop - A515-56-55J8', 'discountprice': None}`
 
 ## Supported Websites
+Total of 20!
 - Amazon
 - Acer
 - Dell
@@ -25,7 +27,6 @@ Now, scrape a product off acer with:
 - BestBuy
 - Walmart
 - Joanns
-- Home Depot
 - Adafruit
 - Xbox
 - Github Shop
@@ -34,3 +35,8 @@ Now, scrape a product off acer with:
 - Newegg
 - Etsy
 - Overstock
+- Pishop
+- Boohoo
+- Walgreens
+- Forever21
+- White House Black Market
