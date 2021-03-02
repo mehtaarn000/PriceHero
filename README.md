@@ -9,7 +9,7 @@ Import the module with:
 
 `import PriceHero as ph`
 
-Now, scrape a product off acer with:
+Now, scrape a product off Acer with:
 
 `laptop = ph.acer("https://store.acer.com/en-us/aspire-5-laptop-a515-56-55j8")`
 
