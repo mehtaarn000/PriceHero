@@ -28,7 +28,8 @@ from . import (
     _walgreens,
     _forever21,
     _whbm,
-    _gucci
+    _gucci,
+    _louis_vuitton
 )
 
 def amazon(amazon_url : str) -> dict:
@@ -219,3 +220,12 @@ def gucci(gucci_url):
     """
     gucci_product = _gucci._gucci(gucci_url)
     return gucci_product
+
+def louis_vuitton(louis_vuitton_url):
+    """Scrape product information from Gucci
+    
+    Keyword arguments:
+    gucci_url -- a product url from gucci.com
+    """
+    louis_vuitton_product = _louis_vuitton._louis_vuitton(louis_vuitton_url)
+    return louis_vuitton_product
