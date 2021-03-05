@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-__version__ = "0.4.4"
+__version__ = "0.4.5"
 __author__ = "mehtaarn000"
 __license__ = "MIT"
 __maintainer__ = "mehtaarn000"
@@ -222,10 +222,10 @@ def gucci(gucci_url):
     return gucci_product
 
 def louis_vuitton(louis_vuitton_url):
-    """Scrape product information from Gucci
+    """Scrape product information from Louis Vuitton
     
     Keyword arguments:
-    gucci_url -- a product url from gucci.com
+    louis_vuitton_url -- a product url from us.louisvuitton.com
     """
     louis_vuitton_product = _louis_vuitton._louis_vuitton(louis_vuitton_url)
     return louis_vuitton_product
