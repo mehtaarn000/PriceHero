@@ -29,7 +29,8 @@ from . import (
     _forever21,
     _whbm,
     _gucci,
-    _louis_vuitton
+    _louis_vuitton,
+    _minecraft_shop
 )
 
 def amazon(amazon_url : str) -> dict:
@@ -203,7 +204,7 @@ def forever21(forever21_url : str) -> dict:
     forever21_product = _forever21._forever21(forever21_url)
     return forever21_product
 
-def whbm(whbm_url):
+def whbm(whbm_url : str) -> dict:
     """Scrape product information from White House Black Market
     
     Keyword arguments:
@@ -212,7 +213,7 @@ def whbm(whbm_url):
     whbm_product = _whbm._whbm(whbm_url)
     return whbm_product
 
-def gucci(gucci_url):
+def gucci(gucci_url : str) -> dict:
     """Scrape product information from Gucci
     
     Keyword arguments:
@@ -221,7 +222,7 @@ def gucci(gucci_url):
     gucci_product = _gucci._gucci(gucci_url)
     return gucci_product
 
-def louis_vuitton(louis_vuitton_url):
+def louis_vuitton(louis_vuitton_url : str) -> dict:
     """Scrape product information from Louis Vuitton
     
     Keyword arguments:
@@ -229,3 +230,11 @@ def louis_vuitton(louis_vuitton_url):
     """
     louis_vuitton_product = _louis_vuitton._louis_vuitton(louis_vuitton_url)
     return louis_vuitton_product
+
+def minecraft(minecraft_url : str) -> dict:
+    """Scrape product information from Minecraft Shop
+    
+    Keyword arguments:
+    minecraft_url -- a product url from shop.minecraft.net
+    """
+    minecraft_product = _minecraft_shop._minecraft_shop(minecraft_url)
