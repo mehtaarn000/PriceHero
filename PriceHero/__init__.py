@@ -31,7 +31,8 @@ from . import (
     _gucci,
     _louis_vuitton,
     _minecraft_shop,
-    _ann_taylor
+    _ann_taylor,
+    _tjmaxx
 )
 
 def amazon(amazon_url : str) -> dict:
@@ -239,6 +240,7 @@ def minecraft(minecraft_url : str) -> dict:
     minecraft_url -- a product url from shop.minecraft.net
     """
     minecraft_product = _minecraft_shop._minecraft_shop(minecraft_url)
+    return minecraft_product
 
 def ann_taylor(ann_taylor_url : str) -> dict:
     """Scrape product information from Ann Taylor
@@ -247,3 +249,13 @@ def ann_taylor(ann_taylor_url : str) -> dict:
     ann_taylor_url -- a product url from anntaylor.com
     """
     ann_taylor_product = _ann_taylor._ann_taylor(ann_taylor_url)
+    return ann_taylor_product
+
+def tjmaxx(tjmaxx_url : str) -> dict:
+    """Scrape product information from Tjmaxx
+    
+    Keyword arguments:
+    tjmaxx_url -- a product url from tjmaxx.tjx.com
+    """
+    tjmaxx_product = _tjmaxx._tjmaxx(tjmaxx_url)
+    return tjmaxx_product
