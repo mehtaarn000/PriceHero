@@ -33,7 +33,8 @@ from . import (
     _minecraft_shop,
     _ann_taylor,
     _tjmaxx,
-    _journeys
+    _journeys,
+    _adidas
 )
 
 def amazon(amazon_url : str) -> dict:
@@ -269,3 +270,12 @@ def journeys(journeys_url : str) -> dict:
     """
     journeys_product = _journeys._journeys(journeys_url)
     return journeys_product
+
+def adidas(adidas_url : str) -> dict:
+    """Scrape product information from Adidas
+    
+    Keyword arguments:
+    adidas_url -- a product url from adidas.com
+    """
+    adidas_product = _adidas._adidas(adidas_url)
+    return adidas_product
