@@ -26,3 +26,4 @@
 25. https://tjmaxx.tjx.com
 26. https://journeys.com
 27. https://adidas.com
+28. https://lids.com

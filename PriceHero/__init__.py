@@ -34,7 +34,8 @@ from . import (
     _ann_taylor,
     _tjmaxx,
     _journeys,
-    _adidas
+    _adidas,
+    _lids
 )
 
 def amazon(amazon_url : str) -> dict:
@@ -279,3 +280,12 @@ def adidas(adidas_url : str) -> dict:
     """
     adidas_product = _adidas._adidas(adidas_url)
     return adidas_product
+
+def lids(lids_url : str) -> dict:
+    """Scrape product information from Lids
+    
+    Keyword arguments:
+    lids_url -- a product url from lids.com
+    """
+    lids_product = _lids._lids(lids_url)
+    return lids_product
