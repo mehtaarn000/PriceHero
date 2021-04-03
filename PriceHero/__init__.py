@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-__version__ = "0.5"
+__version__ = "0.5.1"
 __author__ = "mehtaarn000"
 __license__ = "MIT"
 __maintainer__ = "mehtaarn000"
