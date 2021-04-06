@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="PriceHero-mehtaarn000",
-    version="0.5.1",
+    version="0.5.2",
     author="mehtaarn000",
     description="A python module that will allow users to get product prices information from a multitude of different websites. ",
     long_description=long_description,
