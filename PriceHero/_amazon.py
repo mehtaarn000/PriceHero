@@ -4,7 +4,7 @@ from selectorlib import Extractor
 def _amazon(amazon_url):
     extractor = Extractor.from_yaml_string("""
     name:
-        css: 'h1.a-size-large span.a-size-large'
+        css: 'h1.a-spacing-none span.a-size-large'
         xpath: null
         type: Text
     price:
@@ -15,7 +15,7 @@ def _amazon(amazon_url):
 
     extractor2 = Extractor.from_yaml_string("""
     name:
-        css: 'h1-a.size-large span.a-size-large'
+        css: 'h1.a-size-large span.a-size-large'
         xpath: null
         type: Text
     price:
@@ -45,4 +45,3 @@ def _amazon(amazon_url):
         return productdata2
     else:
         return productdata
-print(_amazon("https://www.amazon.com/dp/B08FJ6ZB4V"))
