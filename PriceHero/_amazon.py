@@ -2,22 +2,14 @@ from requests import get
 from selectorlib import Extractor
 
 def _amazon(amazon_url):
-    extractor2 = Extractor.from_yaml_string("""
-    name:
-        css: span.a-size-large
-        xpath: null
-        type: Text
-    price:
-        css: 'td.a-span12 span.a-size-medium.a-color-price'
-        xpath: null
-        type: Text
-    """)
     extractor = Extractor.from_yaml_string("""
     name:
-        css: '#productTitle'
+        css: 'h1.a-size-large span.a-size-large'
+        xpath: null
         type: Text
     price:
-        css: '#newBuyBoxPrice'
+        css: 'div.a-section.a-spacing-micro span.a-size-medium'
+        xpath: null
         type: Text
     """)   
     headers = {
@@ -36,8 +28,4 @@ def _amazon(amazon_url):
     website = get(amazon_url, headers=headers)
 
     productdata = extractor.extract(website.text)
-    if productdata['price'] == None or productdata['name'] == None:
-        productdata2 = extractor2.extract(website.text)
-        return productdata2
-    else:
-        return productdata
+    return productdata
