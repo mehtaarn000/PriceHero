@@ -12,13 +12,25 @@ def _amazon(amazon_url):
         xpath: null
         type: Text
     """)   
+
+    extractor2 = Extractor.from_yaml_string("""
+    name:
+        css: 'h1-a.size-large span.a-size-large'
+        xpath: null
+        type: Text
+    price:
+        css: 'div#priceInsideBuyBox_feature_div.celwidget span.a-size-medium'
+        xpath: null
+        type: Text
+    """)
+
     headers = {
         'authority': 'www.amazon.com',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',
         'upgrade-insecure-requests': '1',
-        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36',
+        'user-agent': 'Mozilla/50 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
         'sec-fetch-site': 'none',
         'sec-fetch-mode': 'navigate',
@@ -28,4 +40,9 @@ def _amazon(amazon_url):
     website = get(amazon_url, headers=headers)
 
     productdata = extractor.extract(website.text)
-    return productdata
+    if productdata["name"] == None or productdata["price"] == None:
+        productdata2 = extractor2.extract(website.text)
+        return productdata2
+    else:
+        return productdata
+print(_amazon("https://www.amazon.com/dp/B08FJ6ZB4V"))
