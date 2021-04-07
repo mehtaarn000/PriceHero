@@ -3,37 +3,16 @@ from selectorlib import Extractor
 
 def _dell(dell_url):
     extractor = Extractor.from_yaml_string("""
-    originalprice:
-        css: span.cf-price
+    name:
+        css: 'h1 span'
         xpath: null
         type: Text
     price:
-        css: 'div.cf-dell-price div.cf-price'
-        xpath: null
-        type: Text
-    name:
-        css: 'h1.cf-pg-title span'
+        css: 'div.ps-dell-price span:nth-of-type(2)'
         xpath: null
         type: Text
     """)
-    extractor2 = Extractor.from_yaml_string("""
-    originalprice:
-        css: 'div.right-rail-affix-helper span.market-value'
-        xpath: null
-        type: Text
-    savevalue:
-        css: 'div.right-rail-affix-helper span.total-savings'
-        xpath: null
-        type: Text
-    name:
-        css: 'div.right-rail-affix-helper h3.text-bold'
-        xpath: null
-        type: Text
-    price:
-        css: 'div.right-rail-affix-helper span.price'
-        xpath: null
-        type: Text
-    """)
+
     headers = {
         'authority': 'www.dell.com',
         'pragma': 'no-cache',
@@ -50,8 +29,4 @@ def _dell(dell_url):
     website = get(dell_url, headers=headers)
     productdata = extractor.extract(website.text)
 
-    if productdata['name'] == None or productdata['price'] == None:
-        productdata2 = extractor2.extract(website.text)
-        return productdata2
-    else:
-        return productdata
+    return productdata
