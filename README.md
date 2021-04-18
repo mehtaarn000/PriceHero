@@ -19,31 +19,31 @@ Now, scrape a product off Acer with:
 
 ## Supported Websites
 Total of 28!
-- Amazon
 - Acer
-- Dell
-- Michaels
-- BestBuy
-- Walmart
-- Joanns
 - Adafruit
-- Xbox
-- Github Shop
-- Macys
+- Adidas
+- Amazon
+- Ann Taylor
+- BestBuy
+- Boohoo
 - Chess.com Shop
-- Newegg
+- Dell
 - Etsy
+- Forever21
+- Github Shop
+- Gucci
+- Joanns
+- Journeys
+- Lids
+- Louis Vuitton
+- Macys
+- Michaels
+- Minecraft Shop
+- Newegg
 - Overstock
 - Pishop
-- Boohoo
-- Walgreens
-- Forever21
-- White House Black Market
-- Gucci
-- Louis Vuitton
-- Minecraft Shop
-- Ann Taylor
 - Tjmaxx
-- Journeys
-- Adidas
-- Lids
+- Walgreens
+- Walmart
+- White House Black Market
+- Xbox
