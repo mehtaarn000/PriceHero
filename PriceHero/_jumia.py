@@ -30,4 +30,8 @@ def _jumia(jumia_url):
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
     website = get(jumia_url, headers=headers)
     productdata = extractor.extract(website.text)
+    
+    if productdata["originalprice"] == "":
+        del productdata["originalprice"]
+        
     return productdata
