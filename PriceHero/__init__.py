@@ -4,7 +4,7 @@ __version__ = "0.5.5"
 __author__ = "mehtaarn000"
 __license__ = "MIT"
 __maintainer__ = "mehtaarn000"
-__credits__ = ["mehtaarn000", "kilianalias", "nethracookie"]
+__credits__ = ["mehtaarn000", "kilianalias", "nethracookie", "bizzyvinci"]
 
 """A python module that will allow users to get product prices information from a multitude of different websites."""
 from . import (
