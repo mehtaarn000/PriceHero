@@ -35,7 +35,8 @@ from . import (
     _tjmaxx,
     _journeys,
     _adidas,
-    _lids
+    _lids,
+    _jumia
 )
 
 def amazon(amazon_url : str) -> dict:
@@ -289,3 +290,12 @@ def lids(lids_url : str) -> dict:
     """
     lids_product = _lids._lids(lids_url)
     return lids_product
+
+def jumia(jumia_url : str) -> dict:
+    """Scrape product information from jumia
+    
+    Keyword arguments:
+    jumia_url -- a product url from jumia.com.*
+    """
+    jumia_product = _jumia._jumia(jumia_url)
+    return jumia_product
