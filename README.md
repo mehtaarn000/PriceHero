@@ -18,7 +18,7 @@ Now, scrape a product off Acer with:
 `{'price': '$649.99', 'name': 'Aspire 5 Laptop - A515-56-55J8', 'discountprice': None}`
 
 ## Supported Websites
-Total of 28!
+Total of 29!
 - Acer
 - Adafruit
 - Adidas
@@ -34,6 +34,7 @@ Total of 28!
 - Gucci
 - Joanns
 - Journeys
+- Jumia
 - Lids
 - Louis Vuitton
 - Macys
