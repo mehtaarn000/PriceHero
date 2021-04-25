@@ -28,3 +28,4 @@
 27. https://adidas.com
 28. https://lids.com
 29. https://jumia.com.*
+30. https://konga.com

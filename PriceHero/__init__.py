@@ -36,7 +36,8 @@ from . import (
     _journeys,
     _adidas,
     _lids,
-    _jumia
+    _jumia,
+    _konga
 )
 
 def amazon(amazon_url : str) -> dict:
@@ -299,3 +300,12 @@ def jumia(jumia_url : str) -> dict:
     """
     jumia_product = _jumia._jumia(jumia_url)
     return jumia_product
+
+def konga(konga_url : str) -> dict:
+    """Scrape product information from konga
+    
+    Keyword arguments:
+    konga_url -- a product url from konga.com
+    """
+    konga_product = _konga._konga(konga_url)
+    return konga_product
