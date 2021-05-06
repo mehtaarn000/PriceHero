@@ -11,11 +11,11 @@ Import the module with:
 
 Now, scrape a product off Acer with:
 
-`laptop = ph.acer("https://store.acer.com/en-us/aspire-5-laptop-a515-56-55j8")`
+`travelpack = ph.acer("https://store.acer.com/en-us/porsche-design-acer-travelpack-rs-aak010")`
 
-`print(laptop)`, your output should be something like this:
+`print(travelpack)`, your output should be something like this:
 
-`{'price': '$649.99', 'name': 'Aspire 5 Laptop - A515-56-55J8', 'discountprice': None}`
+`{'name': 'Porsche Design Acer Travelpack RS - AAK010', 'price': '$329.99', 'discountprice': None}`
 
 ## Supported Websites
 Total of 30!
