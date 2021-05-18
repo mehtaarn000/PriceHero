@@ -193,16 +193,6 @@ def walgreens(walgreens_url: str) -> dict:
     return walgreens_product
 
 
-def forever21(forever21_url: str) -> dict:
-    """Scrape product information from forever21
-    
-    Keyword arguments:
-    forever21_url -- a product url from forever21.com
-    """
-    forever21_product = _forever21._forever21(forever21_url)
-    return forever21_product
-
-
 def whbm(whbm_url: str) -> dict:
     """Scrape product information from White House Black Market
     
