@@ -2,7 +2,7 @@ from requests import get
 from selectorlib import Extractor
 
 
-def _joanns(joann_url):
+def _joann(joann_url):
     extractor = Extractor.from_yaml_string("""
     name:
         css: 'div.pdp-main__section h1.pdp__name'
