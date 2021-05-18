@@ -213,7 +213,7 @@ def louis_vuitton(louis_vuitton_url: str) -> dict:
     return louis_vuitton_product
 
 
-def minecraft(minecraft_url: str) -> dict:
+def minecraft_shop(minecraft_url: str) -> dict:
     """Scrape product information from Minecraft Shop
     
     Keyword arguments:
