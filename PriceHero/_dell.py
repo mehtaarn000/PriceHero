@@ -9,7 +9,7 @@ def _dell(dell_url):
         xpath: null
         type: Text
     price:
-        css: 'div.ps-dell-price span:nth-of-type(2)'
+        css: div.cf-price
         xpath: null
         type: Text
     """)

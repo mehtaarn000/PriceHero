@@ -9,12 +9,16 @@ def _github_shop(github_shop_url):
         xpath: null
         type: Text
     price:
-        css: 'div.product__header__price span'
+        css: span.on-sale
         xpath: null
+        type: Text
+    originalprice:
+        css: div.product__header__price
+        xpath: '//div[contains(concat(" ",normalize-space(@class)," ")," product__header__price ")]'
         type: Text
     """)
     headers = {
-        'authority': 'www.github.myshopify.com.com',
+        'authority': 'www.thegithubshop.com/products/invertocat-2-0',
         'pragma': 'no-cache',
         'cache-control': 'no-cache',
         'dnt': '1',

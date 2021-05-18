@@ -12,6 +12,10 @@ def _etsy(etsy_url):
         css: p.wt-text-title-03
         xpath: null
         type: Text
+    originalprice:
+        css: p.wt-text-strikethrough
+        xpath: null
+        type: Text
     """)
     headers = {
         'authority': 'www.etsy.com',
