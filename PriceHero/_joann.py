@@ -9,10 +9,14 @@ def _joann(joann_url):
         xpath: null
         type: Text
     price:
-        css: 'div.pdp-main__section span.price__item.sales span.value'
+        css: 'div.pdp-main__section span.price__item.price__sales span.value'
         xpath: null
         type: Text
-""")
+    originalprice:
+        css: 'div.pdp-main__section span.price__item.price__original span.value'
+        xpath: null
+        type: Text
+    """)
     headers = {
         'authority': 'www.joann.com',
         'pragma': 'no-cache',
