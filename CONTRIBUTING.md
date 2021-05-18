@@ -63,7 +63,7 @@ def website(website_url : str) -> dict:
     return website_product
 ```
 
-Replace any mention of `website` with the website's name.
+Replace any mention of `website` with the website that you added.
 
 ## Step 7
 In the README.md file, add 1 to the total number of websites, and add the new website's name to the list. In the supported_websites.md file, Add the number of the website (the last website's number + 1), and then the website's URL. 
