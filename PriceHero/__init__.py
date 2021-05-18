@@ -8,7 +8,7 @@ __credits__ = ["mehtaarn000", "kilianalias", "nethracookie", "bizzyvinci"]
 """A python module that will allow users to get product prices information from a multitude of different websites."""
 from . import (_amazon, _bestbuy, _dell, _michaels, _acer, _walmart, _adafruit,
                _xbox, _joanns, _github_shop, _macys, _chess_shop, _newegg,
-               _etsy, _overstock, _pishop, _boohoo, _walgreens, _forever21,
+               _etsy, _overstock, _pishop, _boohoo, _walgreens,
                _whbm, _gucci, _louis_vuitton, _minecraft_shop, _ann_taylor,
                _tjmaxx, _journeys, _adidas, _lids, _jumia, _konga)
 
