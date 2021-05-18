@@ -51,7 +51,6 @@ def _walmart(walmart_url):
         productdata = {
             "name": originalproductdata["name"],
             "price": price,
-            "originalprice": None
         }
         return productdata
     else:
