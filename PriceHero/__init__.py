@@ -7,7 +7,7 @@ __maintainer__ = "mehtaarn000"
 __credits__ = ["mehtaarn000", "kilianalias", "nethracookie", "bizzyvinci"]
 """A python module that will allow users to get product prices information from a multitude of different websites."""
 from . import (_amazon, _bestbuy, _dell, _michaels, _acer, _walmart, _adafruit,
-               _xbox, _joann, _github_shop, _macys, _chess_shop, _newegg,
+               _xbox, _joann, _github_shop, _chess_shop, _newegg,
                _etsy, _overstock, _pishop, _boohoo, _walgreens,
                _whbm, _gucci, _louis_vuitton, _minecraft_shop, _ann_taylor,
                _tjmaxx, _journeys, _adidas, _lids, _jumia, _konga)
@@ -111,16 +111,6 @@ def github_shop(github_shop_url: str) -> dict:
     """
     github_shop_product = _github_shop._github_shop(github_shop_url)
     return github_shop_product
-
-
-def macys(macys_url: str) -> dict:
-    """Scrape product information from macys.com
-    
-    Keyword arguments:
-    macys_url -- a product url from macys.com
-    """
-    macys_product = _macys._macys(macys_url)
-    return macys_product
 
 
 def chess_shop(chess_shop_url: str) -> dict:

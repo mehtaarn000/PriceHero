@@ -9,7 +9,6 @@
 - https://www.xbox.com
 - https://www.adafruit.com
 - https://github.myshopify.com
-- https://macys.com
 - https://shop.chess.com
 - https://newegg.com
 - https://etsy.com

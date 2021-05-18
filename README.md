@@ -37,7 +37,6 @@ Total of 29!
 - Konga
 - Lids
 - Louis Vuitton
-- Macys
 - Michaels
 - Minecraft Shop
 - Newegg

@@ -15,3 +15,7 @@ Home Depot returns '--' as price.
 ## Forever 21
 Forever 21 returns 'None' in all fields
 (https://forever21.com)
+
+## Macys
+Macys returns 'None' in price and original price fields.
+(https://macys.com)
