@@ -18,7 +18,7 @@ Now, scrape a product off Acer with:
 `{'name': 'Porsche Design Acer Travelpack RS - AAK010', 'price': '$329.99', 'discountprice': None}`
 
 ## Supported Websites
-Total of 29!
+Total of 28!
 - Acer
 - Adafruit
 - Adidas
