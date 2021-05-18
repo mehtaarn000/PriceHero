@@ -5,42 +5,15 @@ __author__ = "mehtaarn000"
 __license__ = "MIT"
 __maintainer__ = "mehtaarn000"
 __credits__ = ["mehtaarn000", "kilianalias", "nethracookie", "bizzyvinci"]
-
 """A python module that will allow users to get product prices information from a multitude of different websites."""
-from . import (
-    _amazon,
-    _bestbuy,
-    _dell,
-    _michaels,
-    _acer,
-    _walmart,
-    _adafruit,
-    _xbox,
-    _joanns,
-    _github_shop,
-    _macys,
-    _chess_shop,
-    _newegg,
-    _etsy,
-    _overstock,
-    _pishop,
-    _boohoo,
-    _walgreens,
-    _forever21,
-    _whbm,
-    _gucci,
-    _louis_vuitton,
-    _minecraft_shop,
-    _ann_taylor,
-    _tjmaxx,
-    _journeys,
-    _adidas,
-    _lids,
-    _jumia,
-    _konga
-)
+from . import (_amazon, _bestbuy, _dell, _michaels, _acer, _walmart, _adafruit,
+               _xbox, _joanns, _github_shop, _macys, _chess_shop, _newegg,
+               _etsy, _overstock, _pishop, _boohoo, _walgreens, _forever21,
+               _whbm, _gucci, _louis_vuitton, _minecraft_shop, _ann_taylor,
+               _tjmaxx, _journeys, _adidas, _lids, _jumia, _konga)
 
-def amazon(amazon_url : str) -> dict:
+
+def amazon(amazon_url: str) -> dict:
     """Scrape product information from amazon.com
 
     Keyword arguments:
@@ -49,7 +22,8 @@ def amazon(amazon_url : str) -> dict:
     amazon_product = _amazon._amazon(amazon_url)
     return amazon_product
 
-def bestbuy(bestbuy_url : str) -> dict:
+
+def bestbuy(bestbuy_url: str) -> dict:
     """Scrape product information from bestbuy.com
     
     Keyword arguments:
@@ -58,7 +32,8 @@ def bestbuy(bestbuy_url : str) -> dict:
     bestbuy_product = _bestbuy._bestbuy(bestbuy_url)
     return bestbuy_product
 
-def dell(dell_url : str) -> dict:
+
+def dell(dell_url: str) -> dict:
     """Scrape product information from dell.com
     
     Keyword arguments:
@@ -67,7 +42,8 @@ def dell(dell_url : str) -> dict:
     dell_product = _dell._dell(dell_url)
     return dell_product
 
-def michaels(michaels_url : str) -> dict:
+
+def michaels(michaels_url: str) -> dict:
     """Scrape product information from michaels.com
     
     Keyword arguments:
@@ -76,7 +52,8 @@ def michaels(michaels_url : str) -> dict:
     michaels_product = _michaels._michaels(michaels_url)
     return michaels_product
 
-def acer(acer_url : str) -> dict:
+
+def acer(acer_url: str) -> dict:
     """Scrape product information from store.acer.com
     
     Keyword arguments:
@@ -85,7 +62,8 @@ def acer(acer_url : str) -> dict:
     acer_product = _acer._acer(acer_url)
     return acer_product
 
-def walmart(walmart_url : str) -> dict:
+
+def walmart(walmart_url: str) -> dict:
     """Scrape product information from walmart.com
     
     Keyword arguments:
@@ -94,7 +72,8 @@ def walmart(walmart_url : str) -> dict:
     walmart_product = _walmart._walmart(walmart_url)
     return walmart_product
 
-def adafruit(adafruit_url : str) -> dict:
+
+def adafruit(adafruit_url: str) -> dict:
     """Scrape product information from adafruit.com
     
     Keyword arguments:
@@ -103,7 +82,8 @@ def adafruit(adafruit_url : str) -> dict:
     adafruit_product = _adafruit._adafruit(adafruit_url)
     return adafruit_product
 
-def xbox(xbox_url : str) -> dict:
+
+def xbox(xbox_url: str) -> dict:
     """Scrape product information from xbox.com
     
     Keyword arguments:
@@ -112,7 +92,8 @@ def xbox(xbox_url : str) -> dict:
     xbox_product = _xbox._xbox(xbox_url)
     return xbox_product
 
-def joanns(joanns_url : str) -> dict:
+
+def joanns(joanns_url: str) -> dict:
     """Scrape product information from joanns.com
     
     Keyword arguments:
@@ -121,7 +102,8 @@ def joanns(joanns_url : str) -> dict:
     joanns_product = _joanns._joanns(joanns_url)
     return joanns_product
 
-def github_shop(github_shop_url : str) -> dict:
+
+def github_shop(github_shop_url: str) -> dict:
     """Scrape product information from github.myshopify.com
     
     Keyword arguments:
@@ -130,7 +112,8 @@ def github_shop(github_shop_url : str) -> dict:
     github_shop_product = _github_shop._github_shop(github_shop_url)
     return github_shop_product
 
-def macys(macys_url : str) -> dict:
+
+def macys(macys_url: str) -> dict:
     """Scrape product information from macys.com
     
     Keyword arguments:
@@ -139,7 +122,8 @@ def macys(macys_url : str) -> dict:
     macys_product = _macys._macys(macys_url)
     return macys_product
 
-def chess_shop(chess_shop_url : str) -> dict:
+
+def chess_shop(chess_shop_url: str) -> dict:
     """Scrape product information from shop.chess.com
     
     Keyword arguments:
@@ -148,7 +132,8 @@ def chess_shop(chess_shop_url : str) -> dict:
     chess_shop_product = _chess_shop._chess_shop(chess_shop_url)
     return chess_shop_product
 
-def newegg(newegg_url : str) -> dict:
+
+def newegg(newegg_url: str) -> dict:
     """Scrape product information from newegg.com
     
     Keyword arguments:
@@ -157,7 +142,8 @@ def newegg(newegg_url : str) -> dict:
     newegg_product = _newegg._newegg(newegg_url)
     return newegg_product
 
-def etsy(etsy_url : str) -> dict:
+
+def etsy(etsy_url: str) -> dict:
     """Scrape product information from etsy.com
     
     Keyword arguments:
@@ -166,7 +152,8 @@ def etsy(etsy_url : str) -> dict:
     etsy_product = _etsy._etsy(etsy_url)
     return etsy_product
 
-def overstock(overstock_url : str) -> dict:
+
+def overstock(overstock_url: str) -> dict:
     """Scrape product information from overstock.com
     
     Keyword arguments:
@@ -175,7 +162,8 @@ def overstock(overstock_url : str) -> dict:
     overstock_product = _overstock._overstock(overstock_url)
     return overstock_product
 
-def pishop(pishop_url : str) -> dict:
+
+def pishop(pishop_url: str) -> dict:
     """Scrape product information from pishop.us
     
     Keyword arguments:
@@ -184,7 +172,8 @@ def pishop(pishop_url : str) -> dict:
     pishop_product = _pishop._pishop(pishop_url)
     return pishop_product
 
-def boohoo(boohoo_url : str) -> dict:
+
+def boohoo(boohoo_url: str) -> dict:
     """Scrape product information from us.boohoo.com
     
     Keyword arguments:
@@ -193,7 +182,8 @@ def boohoo(boohoo_url : str) -> dict:
     boohoo_product = _boohoo._boohoo(boohoo_url)
     return boohoo_product
 
-def walgreens(walgreens_url : str) -> dict:
+
+def walgreens(walgreens_url: str) -> dict:
     """Scrape product information from walgreens
     
     Keyword arguments:
@@ -202,7 +192,8 @@ def walgreens(walgreens_url : str) -> dict:
     walgreens_product = _walgreens._walgreens(walgreens_url)
     return walgreens_product
 
-def forever21(forever21_url : str) -> dict:
+
+def forever21(forever21_url: str) -> dict:
     """Scrape product information from forever21
     
     Keyword arguments:
@@ -211,7 +202,8 @@ def forever21(forever21_url : str) -> dict:
     forever21_product = _forever21._forever21(forever21_url)
     return forever21_product
 
-def whbm(whbm_url : str) -> dict:
+
+def whbm(whbm_url: str) -> dict:
     """Scrape product information from White House Black Market
     
     Keyword arguments:
@@ -220,7 +212,8 @@ def whbm(whbm_url : str) -> dict:
     whbm_product = _whbm._whbm(whbm_url)
     return whbm_product
 
-def gucci(gucci_url : str) -> dict:
+
+def gucci(gucci_url: str) -> dict:
     """Scrape product information from Gucci
     
     Keyword arguments:
@@ -229,7 +222,8 @@ def gucci(gucci_url : str) -> dict:
     gucci_product = _gucci._gucci(gucci_url)
     return gucci_product
 
-def louis_vuitton(louis_vuitton_url : str) -> dict:
+
+def louis_vuitton(louis_vuitton_url: str) -> dict:
     """Scrape product information from Louis Vuitton
     
     Keyword arguments:
@@ -238,7 +232,8 @@ def louis_vuitton(louis_vuitton_url : str) -> dict:
     louis_vuitton_product = _louis_vuitton._louis_vuitton(louis_vuitton_url)
     return louis_vuitton_product
 
-def minecraft(minecraft_url : str) -> dict:
+
+def minecraft(minecraft_url: str) -> dict:
     """Scrape product information from Minecraft Shop
     
     Keyword arguments:
@@ -247,7 +242,8 @@ def minecraft(minecraft_url : str) -> dict:
     minecraft_product = _minecraft_shop._minecraft_shop(minecraft_url)
     return minecraft_product
 
-def ann_taylor(ann_taylor_url : str) -> dict:
+
+def ann_taylor(ann_taylor_url: str) -> dict:
     """Scrape product information from Ann Taylor
     
     Keyword arguments:
@@ -256,7 +252,8 @@ def ann_taylor(ann_taylor_url : str) -> dict:
     ann_taylor_product = _ann_taylor._ann_taylor(ann_taylor_url)
     return ann_taylor_product
 
-def tjmaxx(tjmaxx_url : str) -> dict:
+
+def tjmaxx(tjmaxx_url: str) -> dict:
     """Scrape product information from Tjmaxx
     
     Keyword arguments:
@@ -265,7 +262,8 @@ def tjmaxx(tjmaxx_url : str) -> dict:
     tjmaxx_product = _tjmaxx._tjmaxx(tjmaxx_url)
     return tjmaxx_product
 
-def journeys(journeys_url : str) -> dict:
+
+def journeys(journeys_url: str) -> dict:
     """Scrape product information from Journeys
     
     Keyword arguments:
@@ -274,7 +272,8 @@ def journeys(journeys_url : str) -> dict:
     journeys_product = _journeys._journeys(journeys_url)
     return journeys_product
 
-def adidas(adidas_url : str) -> dict:
+
+def adidas(adidas_url: str) -> dict:
     """Scrape product information from Adidas
     
     Keyword arguments:
@@ -283,7 +282,8 @@ def adidas(adidas_url : str) -> dict:
     adidas_product = _adidas._adidas(adidas_url)
     return adidas_product
 
-def lids(lids_url : str) -> dict:
+
+def lids(lids_url: str) -> dict:
     """Scrape product information from Lids
     
     Keyword arguments:
@@ -292,7 +292,8 @@ def lids(lids_url : str) -> dict:
     lids_product = _lids._lids(lids_url)
     return lids_product
 
-def jumia(jumia_url : str) -> dict:
+
+def jumia(jumia_url: str) -> dict:
     """Scrape product information from jumia
     
     Keyword arguments:
@@ -301,7 +302,8 @@ def jumia(jumia_url : str) -> dict:
     jumia_product = _jumia._jumia(jumia_url)
     return jumia_product
 
-def konga(konga_url : str) -> dict:
+
+def konga(konga_url: str) -> dict:
     """Scrape product information from konga
     
     Keyword arguments:

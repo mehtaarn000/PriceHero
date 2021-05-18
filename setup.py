@@ -7,7 +7,8 @@ setuptools.setup(
     name="PriceHero-mehtaarn000",
     version="0.5.6",
     author="mehtaarn000",
-    description="A python module that will allow users to get product prices information from a multitude of different websites. ",
+    description=
+    "A python module that will allow users to get product prices information from a multitude of different websites. ",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/mehtaarn000/PriceHero",
