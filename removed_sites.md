@@ -11,3 +11,7 @@ Lowes returns 'None' as price.
 ## Home Depot
 Home Depot returns '--' as price.
 (https://homedepot.com)
+
+## Forever 21
+Forever 21 returns 'None' in all fields
+(https://forever21.com)
