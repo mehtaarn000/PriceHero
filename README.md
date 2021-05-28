@@ -7,13 +7,12 @@ A python module that will allow users to get product prices information from a m
 ## Example
 Import the module with:
 
-`import PriceHero as ph`
-
-Now, scrape a product off Acer with:
-
-`travelpack = ph.acer("https://store.acer.com/en-us/porsche-design-acer-travelpack-rs-aak010")`
-
-`print(travelpack)`, your output should be something like this:
+```py
+import PriceHero as ph
+travelpack = ph.acer("https://store.acer.com/en-us/porsche-design-acer-travelpack-rs-aak010")
+print(travelpack)
+```
+Yur output should be something like this:
 
 `{'name': 'Porsche Design Acer Travelpack RS - AAK010', 'price': '$329.99', 'discountprice': None}`
 
