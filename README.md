@@ -14,7 +14,7 @@ print(travelpack)
 ```
 Yur output should be something like this:
 
-`{'name': 'Porsche Design Acer Travelpack RS - AAK010', 'price': '$329.99', 'discountprice': None}`
+`{'name': 'Porsche Design Acer Travelpack RS - AAK010', 'price': '$329.99'}`
 
 ## Supported Websites
 Total of 28!
