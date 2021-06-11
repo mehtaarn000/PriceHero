@@ -35,4 +35,8 @@ def _github_shop(github_shop_url):
 
     website = get(github_shop_url, headers=headers)
     productdata = extractor.extract(website.text)
+
+    if productdata["originalprice"] == None:
+        del productdata["originalprice"]
+
     return productdata

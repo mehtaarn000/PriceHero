@@ -34,4 +34,8 @@ def _etsy(etsy_url):
     }
     website = get(etsy_url, headers=headers)
     productdata = extractor.extract(website.text)
+
+    if productdata["originalprice"] == None:
+        del productdata["originalprice"]
+
     return productdata

@@ -9,11 +9,11 @@ def _acer(acer_url):
         xpath: null
         type: Text
     price:
-        css: 'span.price-wrapper span.price'
+        css: 'span.special-price span.price'
         xpath: null
         type: Text
-    discountprice:
-        css: 'span.special-price span.price'
+    originalprice:
+        css: 'span.price-wrapper span.price'
         xpath: null
         type: Text
     """)
@@ -33,6 +33,12 @@ def _acer(acer_url):
         'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'
     }
 
+
+
     website = get(acer_url, headers=headers)
     productdata = extractor.extract(website.text)
+
+    if productdata["originalprice"] == None:
+        del productdata["originalprice"]
+
     return productdata

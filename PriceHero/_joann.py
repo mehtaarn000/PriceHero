@@ -35,4 +35,8 @@ def _joann(joann_url):
 
     website = get(joann_url, headers=headers)
     productdata = extractor.extract(website.text)
+
+    if productdata["originalprice"] == None:
+        del productdata["originalprice"]
+
     return productdata

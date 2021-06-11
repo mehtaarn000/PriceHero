@@ -35,4 +35,8 @@ def _bestbuy(bestbuy_url):
 
     website = get(bestbuy_url, headers=headers)
     productdata = extractor.extract(website.text)
+
+    if productdata["originalprice"] == None:
+        del productdata["originalprice"]
+
     return productdata
